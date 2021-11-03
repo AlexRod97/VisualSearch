@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<!--
-    THIS CODE IS FORKED FROM GITHUB https://raw.githubusercontent.com/webrtc/samples/gh-pages/src/content/devices/input-output/index.html
-    THIS CODE IS USED FOR EDUCATIONAL PURPOSES ONLY
-
- *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
- *
- *  Use of this source code is governed by a BSD-style license
- *  that can be found in the LICENSE file in the root of the source
- *  tree.
--->
 <html>
 <head>
 
@@ -27,11 +17,11 @@
 <div id="welcome">
     <form class="login-form" action="">
         <div class="form-header">
-            <h3>Gracias por registrarte.</h3>
-            <p>Esperamos que disfrutes de nuestros servicios :)</p>
+            <h3></h3>
+            <p></p>
         </div>        
     </form>
-</div><!--/.wrap-->
+</div>
 
     <title>¿Dónde compraste tu chunche?</title>
 
@@ -48,21 +38,30 @@
 <div id="main" class="container">
     <input id='key' type="hidden" value="94e004e805e14dca8f9ce3095d74811e">
     <div>
+        <div>
+            Busquedas Realizadas: <span id="cantidad">1</span><br>
+            Calificación Promedio: <span id="calificacion">1</span><br>
+        </div>
         <div class="tooltip">
-            Búsquedas: <span id="cantidad">1</span><br>
-            Calificación: <span id="calificacion">1</span><br>
+            <br/>
             <div class="fb-share-button" data-href="http://tu-chunche.web.app/" data-layout="box_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftu-chunche.web.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
         </div>
         <div class="row">
-            <h1>
-                ¿Dónde Compraste Tu Chunche?
+            <h1 >
+                ¿Dónde Compraste <br/> Tu Chunche?
             </h1>
+            <h2 >
+                <br/><br/><br/><br/><br/><br/>
+               
+                ¿Como funciona? <br/>
+                Carga una imagen ya sea desde tu almacenamiento o camara para realizar una busqueda de imagenes semejantes 
+            </h2>
         </div>
         <div  id="botones"    class="row">
             <label id="imageName" for="image">Cargar Imagen</label>
             <input id="image" class="file" type="file" name="image" accept="image/*">
             <label id="takeImage" for="camera">Usar Cámara</label>
-            <label id="buscar" for="search">Búscar</label>
+            <label id="buscar" for="search">Buscar</label>
         </div>
         <div id="calificar" class="row">
             <input id="calificacionValor" type="number" value="5" min="0" max="5" step="1">
